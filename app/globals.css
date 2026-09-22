@@ -4,20 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Кольори заходу сонця біль.net: корал, персик і приглушений ліловий.
-   Назви токенів спільні з іншими гілками: clay — кнопки, sage — другий акцент. */
+/* Червоні тони заходу сонця біль.net: глибокий корал-червоний, рожевий фон,
+   винно-рожевий другий акцент. Назви токенів спільні з іншими гілками. */
 @theme {
-  --color-cream: #fff7f2;
-  --color-sand: #fde8dc;
-  --color-line: #f4d5c4;
-  --color-ink: #3b2226;
-  --color-ink-soft: #5e3d40;
-  --color-muted-ink: #8e6c6c;
-  --color-clay: #e8683f;
-  --color-clay-dark: #c9502b;
-  --color-sage: #c48bb4;
-  --color-sage-dark: #9a5d8c;
-  --color-honey: #f4a340;
+  --color-cream: #fff5f4;
+  --color-sand: #fde2df;
+  --color-line: #f3cbc7;
+  --color-ink: #3a1b1e;
+  --color-ink-soft: #5c3337;
+  --color-muted-ink: #8d6266;
+  --color-clay: #d63c43;
+  --color-clay-dark: #b02a31;
+  --color-sage: #c2687e;
+  --color-sage-dark: #9a4258;
+  --color-honey: #f08a4b;
 }
 
 @theme inline {
