@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-xl shadow-ink/10 bg-sand">
             <Image
               src="/images/hero.webp"
-              alt="Спокійна усміхнена жінка вдома в затишному світлі"
+              alt="Усміхнена жінка з чашкою чаю біля світлого вікна з видом на море"
               fill
               priority
               sizes="(max-width: 768px) 90vw, 448px"

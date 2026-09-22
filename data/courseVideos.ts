@@ -18,13 +18,15 @@ export interface LessonPreview {
 
 // TODO: id і назви з бібліотеки Bunny для тиск.net.
 export const COURSE_VIDEOS: CourseVideo[] = [
-  { id: '', title: 'Що таке тиск і що означають два числа' },
-  { id: '', title: 'Як правильно міряти тиск удома' },
-  { id: '', title: 'Чому тиск стрибає — і коли це нормально' },
-  { id: '', title: 'Сіль, їжа й вода: що справді впливає' },
-  { id: '', title: 'Рух, вага й тиск' },
-  { id: '', title: 'Стрес, сон і «тиск від нервів»' },
-  { id: '', title: 'Ліки від тиску: страхи й факти' },
+  { id: '', title: 'Що таке тиск і що означають два числа', poster: '/images/lessons/1.webp' },
+  { id: '', title: 'Як правильно міряти тиск удома', poster: '/images/lessons/2.webp' },
+  { id: '', title: 'Чому тиск стрибає — і коли це нормально', poster: '/images/lessons/3.webp' },
+  { id: '', title: 'Сіль, їжа й вода: що справді впливає', poster: '/images/lessons/4.webp' },
+  { id: '', title: 'Рух, вага й тиск', poster: '/images/lessons/5.webp' },
+  { id: '', title: 'Сон і відновлення', poster: '/images/lessons/6.webp' },
+  { id: '', title: 'Стрес, дихання і «тиск від нервів»', poster: '/images/lessons/7.webp' },
+  { id: '', title: 'Щоденні звички, що тримають тиск', poster: '/images/lessons/8.webp' },
+  { id: '', title: 'Як прийти до стабільності', poster: '/images/lessons/9.webp' },
   { id: '', title: 'Коли потрібен лікар або швидка' },
 ]
 
