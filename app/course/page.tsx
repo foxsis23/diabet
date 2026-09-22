@@ -11,7 +11,7 @@ import { DOCTOR } from '@/data/doctor'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Відеокурс лікаря про діабет — діабет.net',
+  title: 'Відеокурс про діабет — діабет.net',
   description: 'Цукор та інсулін простими словами, спокій замість страху перед цифрами — 10 відеоуроків.',
 }
 
@@ -31,7 +31,7 @@ export default async function CoursePage() {
             <h1 className="text-4xl font-extrabold text-ink mb-4">{course.name}</h1>
             <p className="text-lg text-ink-soft mb-2">{course.description}</p>
             <p className="text-muted-ink text-sm mb-6">
-              Автор — {DOCTOR.name}, {DOCTOR.role.toLowerCase()}
+              Авторка — {DOCTOR.name}
             </p>
             <div className="text-4xl font-extrabold text-clay">{course.price} грн</div>
             <p className="text-muted-ink text-sm mt-1">Разовий платіж · доступ назавжди</p>

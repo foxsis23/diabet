@@ -12,7 +12,7 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 bg-sage/15 text-sage-dark text-sm font-semibold px-3 py-1.5 rounded-full mb-6">
             <span className="w-2 h-2 bg-sage rounded-full" />
-            Від лікаря-ендокринолога
+            Авторський курс Єлизавети Скидиненко
           </div>
 
           <h1 className="text-4xl md:text-5xl font-extrabold text-ink mb-6 leading-tight">

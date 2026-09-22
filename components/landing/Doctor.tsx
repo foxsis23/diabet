@@ -16,10 +16,9 @@ export default function Doctor() {
           )}
         </div>
         <div>
-          <p className="text-sage-dark font-semibold mb-2">Автор курсу</p>
-          <h2 className="text-3xl font-extrabold text-ink mb-1">{DOCTOR.name}</h2>
-          <p className="text-muted-ink mb-6">{DOCTOR.role}</p>
-          <ul className="space-y-3">
+          <p className="text-sage-dark font-semibold mb-2">Авторка курсу</p>
+          <h2 className="text-3xl font-extrabold text-ink mb-6">{DOCTOR.name}</h2>
+                    <ul className="space-y-3">
             {DOCTOR.bio.map((line) => (
               <li key={line} className="flex gap-3 text-ink-soft">
                 <Check className="w-5 h-5 text-sage-dark shrink-0 mt-0.5" />

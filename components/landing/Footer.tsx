@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="font-semibold text-ink mb-3">Матеріали</div>
             <ul className="space-y-2 text-sm text-muted-ink">
               <li><Link href="/test" className="hover:text-clay transition-colors">Тест ризику діабету</Link></li>
-              <li><Link href="/course" className="hover:text-clay transition-colors">Відеокурс лікаря</Link></li>
+              <li><Link href="/course" className="hover:text-clay transition-colors">Відеокурс про діабет</Link></li>
               <li><Link href="/my" className="hover:text-clay transition-colors">Мої матеріали</Link></li>
             </ul>
           </div>

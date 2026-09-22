@@ -10,9 +10,9 @@ import FAQ from '@/components/landing/FAQ'
 import Footer from '@/components/landing/Footer'
 
 export const metadata: Metadata = {
-  title: 'діабет.net — Тест ризику та відеокурс лікаря',
+  title: 'діабет.net — Тест ризику та відеокурс про діабет',
   description:
-    'Перевірте ризик діабету 2 типу за 2 хвилини та дізнайтесь, як тримати цукор у нормі, з відеокурсу лікаря-ендокринолога.',
+    'Перевірте ризик діабету 2 типу за 2 хвилини та дізнайтесь, як тримати цукор у нормі, з відеокурсу Єлизавети Скидиненко.',
 }
 
 export default function HomePage() {

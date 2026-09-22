@@ -68,7 +68,7 @@ export default async function ResultPage({ searchParams }: PageProps) {
           </div>
 
           <div className="rounded-3xl bg-clay/10 border border-clay/20 p-8 text-center">
-            <h2 className="text-xl font-extrabold text-ink mb-2">Розберіться в діабеті з лікарем</h2>
+            <h2 className="text-xl font-extrabold text-ink mb-2">Розберіться в діабеті спокійно</h2>
             <p className="text-ink-soft mb-6">
               Відеокурс простою мовою: як працюють цукор та інсулін і як жити з діабетом спокійно.
             </p>

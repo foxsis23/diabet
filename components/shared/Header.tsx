@@ -9,7 +9,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm text-ink-soft">
           <Link href="/test" className="hover:text-clay transition-colors">Тест ризику</Link>
-          <Link href="/course" className="hover:text-clay transition-colors">Курс лікаря</Link>
+          <Link href="/course" className="hover:text-clay transition-colors">Відеокурс</Link>
           <Link href="/my" className="hover:text-clay transition-colors">Мої матеріали</Link>
           <Link href="/contacts" className="hover:text-clay transition-colors">Контакти</Link>
         </nav>
