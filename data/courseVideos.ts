@@ -16,17 +16,18 @@ export interface LessonPreview {
   poster?: string
 }
 
-// TODO: id і назви з бібліотеки Bunny для тиск.net.
+// Бібліотека TISK (Bunny Stream 759814), файли N_1.mp4 → урок N.
+// TODO: уроки 2 і 10 не догрузились; назви уроків — тимчасові.
 export const COURSE_VIDEOS: CourseVideo[] = [
-  { id: '', title: 'Що таке тиск і що означають два числа', poster: '/images/lessons/1.webp' },
+  { id: '2cae3cd3-3096-4461-9592-80e65c06746e', title: 'Що таке тиск і що означають два числа', poster: '/images/lessons/1.webp' },
   { id: '', title: 'Як правильно міряти тиск удома', poster: '/images/lessons/2.webp' },
-  { id: '', title: 'Чому тиск стрибає — і коли це нормально', poster: '/images/lessons/3.webp' },
-  { id: '', title: 'Сіль, їжа й вода: що справді впливає', poster: '/images/lessons/4.webp' },
-  { id: '', title: 'Рух, вага й тиск', poster: '/images/lessons/5.webp' },
-  { id: '', title: 'Сон і відновлення', poster: '/images/lessons/6.webp' },
-  { id: '', title: 'Стрес, дихання і «тиск від нервів»', poster: '/images/lessons/7.webp' },
-  { id: '', title: 'Щоденні звички, що тримають тиск', poster: '/images/lessons/8.webp' },
-  { id: '', title: 'Як прийти до стабільності', poster: '/images/lessons/9.webp' },
+  { id: 'dfc4f108-ef5b-414d-a50e-c9f8b2419fbb', title: 'Чому тиск стрибає — і коли це нормально', poster: '/images/lessons/3.webp' },
+  { id: '698397d8-c587-42cd-be8f-0b0f4ccdf558', title: 'Сіль, їжа й вода: що справді впливає', poster: '/images/lessons/4.webp' },
+  { id: '3465964d-a483-42da-a47e-d39ad759580c', title: 'Рух, вага й тиск', poster: '/images/lessons/5.webp' },
+  { id: '2b116813-88df-434a-ae93-f8e65e0f6fc1', title: 'Сон і відновлення', poster: '/images/lessons/6.webp' },
+  { id: '68baaa4b-4b80-43e2-82aa-717bcf9f6f6e', title: 'Стрес, дихання і «тиск від нервів»', poster: '/images/lessons/7.webp' },
+  { id: 'f18deb81-17fc-4c3e-9d5b-c75a01403434', title: 'Щоденні звички, що тримають тиск', poster: '/images/lessons/8.webp' },
+  { id: 'cfe22137-ec2d-4d99-bbec-be8665b748e9', title: 'Як прийти до стабільності', poster: '/images/lessons/9.webp' },
   { id: '', title: 'Коли потрібен лікар або швидка' },
 ]
 
