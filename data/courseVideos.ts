@@ -19,15 +19,15 @@ export interface LessonPreview {
 // Бібліотека біль.net (Bunny Stream 759829).
 // TODO: id і назви уроків — з бібліотеки, коли відео обробляться.
 export const COURSE_VIDEOS: CourseVideo[] = [
-  { id: '', title: 'Що таке біль і навіщо він потрібен' },
-  { id: '', title: 'Чому біль стає хронічним' },
-  { id: '', title: 'Спина й шия: що справді допомагає' },
-  { id: '', title: 'Рух без страху: з чого почати' },
-  { id: '', title: 'Сон і біль: замкнене коло' },
-  { id: '', title: 'Стрес, напруга й біль' },
-  { id: '', title: 'Знеболювальні: користь і пастки' },
-  { id: '', title: 'Головний біль: що його підсилює' },
-  { id: '', title: 'Щоденні звички для полегшення' },
+  { id: '', title: 'Що таке біль і навіщо він потрібен', poster: '/images/lessons/1.webp' },
+  { id: '', title: 'Чому біль стає хронічним', poster: '/images/lessons/2.webp' },
+  { id: '', title: 'Спина й шия: що справді допомагає', poster: '/images/lessons/3.webp' },
+  { id: '', title: 'Рух без страху: з чого почати', poster: '/images/lessons/4.webp' },
+  { id: '', title: 'Сон і біль: замкнене коло', poster: '/images/lessons/5.webp' },
+  { id: '', title: 'Стрес, напруга й біль', poster: '/images/lessons/6.webp' },
+  { id: '', title: 'Знеболювальні: користь і пастки', poster: '/images/lessons/7.webp' },
+  { id: '', title: 'Головний біль: що його підсилює', poster: '/images/lessons/8.webp' },
+  { id: '', title: 'Щоденні звички для полегшення', poster: '/images/lessons/9.webp' },
   { id: '', title: 'Коли потрібен лікар' },
 ]
 
