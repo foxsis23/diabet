@@ -69,7 +69,7 @@ export default function LessonsCarousel() {
   return (
     <section id="videos" className="py-20 bg-cream overflow-hidden">
       <div className="px-4 text-center mb-12">
-        <h2 className="text-3xl font-extrabold text-ink mb-4">Курс лікаря: {N} уроків</h2>
+        <h2 className="text-3xl font-extrabold text-ink mb-4">Відеокурс: {N} уроків</h2>
         <p className="text-muted-ink text-lg max-w-2xl mx-auto">
           {hasCourse
             ? 'Ваш курс — дивіться прямо тут'

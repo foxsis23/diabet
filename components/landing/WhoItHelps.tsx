@@ -9,7 +9,7 @@ const cards: { Icon: LucideIcon; title: string; description: string }[] = [
   {
     Icon: Activity,
     title: 'Цукор «скаче»',
-    description: 'Зрозумієте, від чого залежать коливання глюкози і як їх згладити щодня.',
+    description: 'Зрозумієте, чому глюкоза коливається і чому це не привід для паніки.',
   },
   {
     Icon: ShieldCheck,

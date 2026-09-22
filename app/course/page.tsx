@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Відеокурс лікаря про діабет — діабет.net',
-  description: 'Харчування, аналізи, рух, ліки й ускладнення — відеоуроки ендокринолога простою мовою.',
+  description: 'Цукор та інсулін простими словами, спокій замість страху перед цифрами — 10 відеоуроків.',
 }
 
 export default async function CoursePage() {

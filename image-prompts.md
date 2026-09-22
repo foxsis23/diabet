@@ -12,19 +12,21 @@
 | `doctor.webp` | 1000×1000 | Friendly female endocrinologist in her 40s, white coat over a sage green blouse, warm smile, soft beige clinic background with plants, head and shoulders portrait, centered |
 | `og-image.webp` | 1200×630 | Wide flat-lay on a cream linen tablecloth: healthy plate half vegetables, quarter grilled fish, quarter buckwheat, glass of water, glucose meter and a notebook, lots of empty space on the left side |
 
-## Прев'ю уроків — `public/images/lessons/1.webp` … `8.webp`, 1280×720 (16:9)
+## Прев'ю уроків — `public/images/lessons/1.webp` … `10.webp`, 1280×720 (16:9)
 
-Після додавання пропишіть `poster: '/images/lessons/N.webp'` у `data/courseVideos.ts`.
-Поки прев'ю немає — показується теплий градієнт із назвою уроку.
+Після додавання пропишіть `poster: '/images/lessons/N.webp'` у `data/courseVideos.ts`
+(або просто скиньте файли — пропишу сам). Поки прев'ю немає — теплий градієнт із назвою.
 
-1. **Що таке діабет** — Soft 3D illustration of a sugar cube and a key opening a cell, warm clay and cream colors, minimalistic, centered, lots of negative space
-2. **Аналізи й норми** — Close-up of a hand with a lancet pen and glucose meter on a sand-colored table, lab test paper nearby, warm morning light
-3. **Метод тарілки** — Top-down view of a plate divided: half colorful vegetables, quarter chicken breast, quarter brown rice, on a terracotta table
-4. **Вуглеводи та ХО** — Wholegrain bread slice, apple, cup of buckwheat and a kitchen scale arranged neatly on cream background, soft shadows
-5. **Рух і активність** — Middle-aged couple walking in an autumn park with golden leaves, warm sunset backlight, seen from behind
-6. **Ліки та інсулін** — Insulin pen, pill organizer and a glass of water on a wooden bedside table, soft warm lamp light, calm and clean
-7. **Гіпоглікемія** — Glass of orange juice, glucose tablets and a few sugar cubes on a light table, a hand reaching for the juice, warm light
-8. **Ускладнення** — Caring hands gently applying cream to a foot, soft towel, warm bathroom light, tender and non-clinical mood
+1. **Що таке діабет і чому це не вирок** — Woman in her 40s sitting by a sunny window with a cup of tea, calm relieved smile, soft morning light, cozy knitted sweater
+2. **Інсулін і глюкоза простими словами** — Soft 3D illustration of a golden key opening a round cell door with small glowing sugar crystals flowing inside, minimal, cream background
+3. **Чому цукор змінюється — і це нормально** — Gentle wave line drawn in terracotta on cream paper, like calm sea waves, with a small glucose meter beside it, top-down, minimal
+4. **Чому мозок боїться цифр** — Person holding a glucose meter, face relaxed, the numbers blurred out of focus, warm lamp light, shallow depth of field
+5. **Головна помилка** — A crossroads path in a warm autumn park, one path overgrown, another sunlit, soft golden hour
+6. **Чому крайнощі погіршують стан** — Balance scale on a wooden table: one side a cake slice, other side a single lettuce leaf, perfectly middle position, warm soft light
+7. **Як формується хронічне напруження** — Hands tightly holding a mug, then soft release — shoulders relaxing, woman exhaling with closed eyes, blanket, warm evening light
+8. **Що робити в моменті** — Close-up of hands placing a glucose tablet and a glass of juice on a table, a notebook with a simple checklist nearby, calm and clear
+9. **Як формується стабільність** — Stack of smooth river stones balanced on a wooden table, small green plant nearby, soft sunrise light
+10. **Коли потрібен лікар** — Warm friendly consultation: doctor and patient talking at a table, doctor showing a notebook, cozy clinic with plants, no faces in sharp focus
 
 ## Іконка сайту
 - `app/icon.png` 512×512 — Minimal flat icon: a soft terracotta drop shape with a small sage green leaf, cream background, rounded, no text
