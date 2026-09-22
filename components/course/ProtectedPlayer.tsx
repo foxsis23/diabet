@@ -1,5 +1,7 @@
 'use client'
 
+import { SITE_NAME } from '@/data/site'
+
 interface Props {
   url: string
   title: string
@@ -32,7 +34,7 @@ export default function ProtectedPlayer({ url, title, email, autoplay }: Props) 
           aria-hidden
           className="wm-drift pointer-events-none absolute z-10 text-white/35 text-xs sm:text-sm font-semibold whitespace-nowrap drop-shadow"
         >
-          {email} · діабет.net
+          {email} · {SITE_NAME}
         </span>
       )}
     </div>

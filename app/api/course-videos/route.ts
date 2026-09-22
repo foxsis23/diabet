@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server'
 import { COURSE_VIDEOS, COURSE_PRODUCT_ID } from '@/data/courseVideos'
 import { isBunnyConfigured, signedEmbedUrl } from '@/lib/bunny'
+import { SITE_HOST } from '@/data/site'
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://apimedsys.com.ua'
-const SITE_HOST = process.env.NEXT_PUBLIC_SITE_HOST || 'xn--80achg9d0f.net'
 
 /** Перевіряємо оплату на сервері — клієнту не можна довіряти в цьому питанні. */
 async function me(token: string): Promise<{ productIds: string[]; email: string }> {

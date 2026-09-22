@@ -1,7 +1,7 @@
+import { SITE_HOST } from '@/data/site'
+
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || 'https://apimedsys.com.ua'
-const SITE_HOST =
-  process.env.NEXT_PUBLIC_SITE_HOST || 'xn--80achg9d0f.net'
 
 interface ApiEnvelope<T> {
   success: boolean

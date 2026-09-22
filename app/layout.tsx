@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
 import QueryProvider from './QueryProvider'
+import { SITE_URL } from '@/data/site'
 
 const nunito = Nunito({
   variable: '--font-sans',
@@ -9,7 +10,7 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://xn--80achg9d0f.net'),
+  metadataBase: new URL(SITE_URL),
   title: 'діабет.net — Жити з діабетом спокійно',
   description:
     'Безкоштовний тест ризику діабету 2 типу (FINDRISC) і відеокурс: цукор та інсулін простими словами, спокій і стабільність без крайнощів.',

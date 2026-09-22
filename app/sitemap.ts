@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
+import { SITE_URL } from '@/data/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://xn--80achg9d0f.net'
+  const base = SITE_URL
   const pages: [string, number][] = [
     ['', 1],
     ['/course', 0.9],
