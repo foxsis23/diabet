@@ -4,7 +4,7 @@ import LegalDocument from '@/components/shared/LegalDocument'
 import { PRIVACY_BLOCKS } from '@/data/legal/privacy'
 
 export const metadata: Metadata = {
-  title: 'Політика конфіденційності — тиск.net',
+  title: 'Політика конфіденційності — біль.net',
   description: 'Порядок збору, обробки, зберігання та захисту персональних даних користувачів сайту.',
 }
 

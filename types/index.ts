@@ -10,17 +10,10 @@ export interface Question {
   answers: Answer[]
 }
 
-export type BpLevel =
-  | 'unknown'
-  | 'optimal'
-  | 'normal'
-  | 'high_normal'
-  | 'grade1'
-  | 'grade2'
-  | 'grade3'
+export type PainLevel = 'mild' | 'moderate' | 'severe'
 
-export interface BpResult {
-  level: BpLevel
+export interface PainResult {
+  level: PainLevel
   title: string
   text: string
   steps: string[]

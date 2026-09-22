@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { QUESTIONS } from '@/data/questions'
-import { bpLevel } from '@/lib/scoring'
+import { painLevel } from '@/lib/scoring'
 import { trackAnalyticsEvent } from '@/lib/api'
 import { trackEvent } from '@/lib/analytics'
 import QuestionCard from './QuestionCard'
@@ -23,7 +23,7 @@ export default function TestFlow() {
     const next = [...answers, selectedAnswer]
 
     if (isLast) {
-      const level = bpLevel(next)
+      const level = painLevel(next)
       trackEvent('test_completed', { level })
       trackAnalyticsEvent('complete_test', { level, answers: next }).catch(() => {})
       router.push(`/result?a=${next.join(',')}`)

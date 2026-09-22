@@ -2,24 +2,24 @@ import { Stethoscope, Users, ShieldCheck, Activity, type LucideIcon } from 'luci
 
 const cards: { Icon: LucideIcon; title: string; description: string }[] = [
   {
-    Icon: Stethoscope,
-    title: 'Щойно сказали «гіпертонія»',
-    description: 'Розберетесь, що відбувається із судинами і серцем, і перестанете боятися — крок за кроком.',
-  },
-  {
     Icon: Activity,
-    title: 'Тиск «стрибає»',
-    description: 'Зрозумієте, чому цифри змінюються протягом дня і коли це справді привід для тривоги.',
+    title: 'Болить спина чи шия',
+    description: 'Зрозумієте, чому біль тримається місяцями, і що допомагає йому відступити.',
   },
   {
     Icon: ShieldCheck,
-    title: 'Тиск на межі норми',
-    description: 'Дізнаєтесь, що змінити зараз, щоб не дійти до таблеток на все життя.',
+    title: 'Страшно рухатися',
+    description: 'Дізнаєтесь, чому обережність іноді робить гірше і як повертатися до руху безпечно.',
+  },
+  {
+    Icon: Stethoscope,
+    title: 'Знеболювальні вже не рятують',
+    description: 'Розберетесь, коли ліки допомагають, а коли самі підтримують біль.',
   },
   {
     Icon: Users,
-    title: 'Турбуєтесь про батьків',
-    description: 'Знатимете, як правильно міряти тиск рідним і коли не можна чекати.',
+    title: 'Болить у близької людини',
+    description: 'Знатимете, як підтримати і коли не можна відкладати візит до лікаря.',
   },
 ]
 
@@ -30,7 +30,7 @@ export default function WhoItHelps() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-ink mb-4">Кому допоможе курс</h2>
           <p className="text-muted-ink text-lg max-w-2xl mx-auto">
-            Для тих, хто живе з підвищеним тиском, має його на межі норми або доглядає за рідними
+            Для тих, хто живе з болем тижнями й місяцями, і для їхніх близьких
           </p>
         </div>
 

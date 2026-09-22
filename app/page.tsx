@@ -10,9 +10,9 @@ import FAQ from '@/components/landing/FAQ'
 import Footer from '@/components/landing/Footer'
 
 export const metadata: Metadata = {
-  title: 'тиск.net — Перевірка тиску та відеокурс',
+  title: 'біль.net — Перевірка болю та відеокурс',
   description:
-    'Дізнайтесь, що означають ваші цифри тиску, і як тримати його в нормі — з відеокурсу Єлизавети Скидиненко.',
+    'Дізнайтесь, що підсилює ваш біль і як його полегшити, — з відеокурсу Єлизавети Скидиненко.',
 }
 
 export default function HomePage() {

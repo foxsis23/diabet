@@ -16,13 +16,14 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-extrabold text-ink mb-6 leading-tight">
-            Високий тиск — не вирок.{' '}
-            <span className="text-clay">Його можна тримати під контролем</span>
+            Біль не мусить бути нормою.{' '}
+            <span className="text-clay">З ним можна впоратися</span>
           </h1>
 
           <p className="text-lg md:text-xl text-ink-soft mb-10 leading-relaxed">
-            Відеоуроки простою мовою: що означають цифри на тонометрі, чому тиск стрибає, як
-            знижувати його без крайнощів і коли час до лікаря. Без страшилок і складних термінів.
+            Відеоуроки простою мовою: чому біль у спині, суглобах чи голові не минає, що його
+            підсилює, як полегшити стан без крайнощів і коли час до лікаря. Без страшилок і
+            складних термінів.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -36,7 +37,7 @@ export default function Hero() {
               href="/test"
               className="text-center border-2 border-line hover:border-clay text-ink font-semibold px-6 py-3.5 rounded-full transition-colors"
             >
-              Перевірити свій тиск безкоштовно
+              Перевірити свій біль безкоштовно
             </Link>
           </div>
 
@@ -61,7 +62,7 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-xl shadow-ink/10 bg-sand">
             <Image
               src="/images/hero.webp"
-              alt="Усміхнена жінка з чашкою чаю біля світлого вікна з видом на море"
+              alt="Спокійна усміхнена жінка в теплому світлі заходу сонця"
               fill
               priority
               sizes="(max-width: 768px) 90vw, 448px"

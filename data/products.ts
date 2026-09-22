@@ -5,9 +5,9 @@ import { COURSE_PRODUCT_ID } from './courseVideos'
 export const PRODUCTS: Record<string, Product> = {
   [COURSE_PRODUCT_ID]: {
     id: COURSE_PRODUCT_ID,
-    name: 'Відеокурс: тиск під контролем без страху',
+    name: 'Відеокурс: життя без постійного болю',
     description:
-      'Відеоуроки простою мовою: що означають цифри тиску, чому він стрибає і як тримати його в нормі без крайнощів.',
+      'Відеоуроки простою мовою: чому біль не минає, що його підсилює і як полегшити стан без крайнощів.',
     price: 249,
   },
 }

@@ -3,7 +3,7 @@ import Header from '@/components/shared/Header'
 import { SUPPORT_EMAIL, SUPPORT_TELEGRAM } from '@/data/site'
 
 export const metadata: Metadata = {
-  title: 'Контакти — тиск.net',
+  title: 'Контакти — біль.net',
 }
 
 export default function ContactsPage() {

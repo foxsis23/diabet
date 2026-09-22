@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-// ВООЗ, Global report on hypertension (2023).
+// IASP, Global Burden of Disease, настанови ВООЗ щодо болю в спині (2023).
 const facts = [
-  { value: '1 з 3', label: 'дорослих у світі має підвищений тиск' },
-  { value: '~46%', label: 'не знають про свою гіпертонію' },
-  { value: '1 з 5', label: 'тримає тиск під контролем' },
+  { value: '1 з 5', label: 'дорослих живе з хронічним болем' },
+  { value: '№1', label: 'причина втрати працездатності у світі — біль у спині' },
+  { value: '3 міс', label: 'після них біль уже вважають хронічним' },
   { value: '2 хв', label: 'займає перевірка на сайті' },
 ]
 
@@ -23,17 +23,17 @@ export default function TrustBlock() {
 
         <div className="rounded-[2rem] bg-sage/15 border border-sage/30 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-extrabold text-ink mb-2">Що означають ваші цифри?</h2>
+            <h2 className="text-2xl font-extrabold text-ink mb-2">Що підсилює ваш біль?</h2>
             <p className="text-ink-soft">
-              Вкажіть останні показники тонометра — і дізнаєтесь категорію тиску за європейськими
-              рекомендаціями та свої фактори ризику.
+              Кілька запитань — і ви дізнаєтесь, наскільки біль впливає на життя, чи є тривожні
+              ознаки та що саме його підтримує.
             </p>
           </div>
           <Link
             href="/test"
             className="shrink-0 bg-sage-dark hover:bg-sage-dark/90 text-white font-bold px-7 py-3.5 rounded-full transition-colors"
           >
-            Перевірити тиск →
+            Перевірити біль →
           </Link>
         </div>
       </div>

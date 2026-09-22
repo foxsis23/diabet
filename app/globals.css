@@ -4,20 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* М'які блакитні кольори тиск.net. Назви токенів спільні з тиск.net:
-   clay — основний колір кнопок, sage — другий акцент, honey — теплий. */
+/* Кольори заходу сонця біль.net: корал, персик і приглушений ліловий.
+   Назви токенів спільні з іншими гілками: clay — кнопки, sage — другий акцент. */
 @theme {
-  --color-cream: #f5f9fc;
-  --color-sand: #e5eff7;
-  --color-line: #d3e1ec;
-  --color-ink: #1d2b38;
-  --color-ink-soft: #3a4d5e;
-  --color-muted-ink: #697d8e;
-  --color-clay: #3f8fcf;
-  --color-clay-dark: #2c74ad;
-  --color-sage: #7fb7a4;
-  --color-sage-dark: #4b8f78;
-  --color-honey: #f0b45c;
+  --color-cream: #fff7f2;
+  --color-sand: #fde8dc;
+  --color-line: #f4d5c4;
+  --color-ink: #3b2226;
+  --color-ink-soft: #5e3d40;
+  --color-muted-ink: #8e6c6c;
+  --color-clay: #e8683f;
+  --color-clay-dark: #c9502b;
+  --color-sage: #c48bb4;
+  --color-sage-dark: #9a5d8c;
+  --color-honey: #f4a340;
 }
 
 @theme inline {
