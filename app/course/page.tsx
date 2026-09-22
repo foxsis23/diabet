@@ -11,8 +11,8 @@ import { DOCTOR } from '@/data/doctor'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Відеокурс про діабет — діабет.net',
-  description: 'Цукор та інсулін простими словами, спокій замість страху перед цифрами — 10 відеоуроків.',
+  title: 'Відеокурс про тиск — тиск.net',
+  description: 'Що означають цифри тиску, як його знижувати без крайнощів і коли потрібен лікар — відеоуроки простою мовою.',
 }
 
 export default async function CoursePage() {

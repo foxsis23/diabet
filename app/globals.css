@@ -4,19 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Теплі м'які кольори діабет.net */
+/* М'які блакитні кольори тиск.net. Назви токенів спільні з тиск.net:
+   clay — основний колір кнопок, sage — другий акцент, honey — теплий. */
 @theme {
-  --color-cream: #fbf5ec;
-  --color-sand: #f3e6d5;
-  --color-line: #eadbc8;
-  --color-ink: #3b2a22;
-  --color-ink-soft: #5c4639;
-  --color-muted-ink: #8a7364;
-  --color-clay: #d9734e;
-  --color-clay-dark: #bf5c39;
-  --color-sage: #8fae8b;
-  --color-sage-dark: #5f8a5b;
-  --color-honey: #e8b04b;
+  --color-cream: #f5f9fc;
+  --color-sand: #e5eff7;
+  --color-line: #d3e1ec;
+  --color-ink: #1d2b38;
+  --color-ink-soft: #3a4d5e;
+  --color-muted-ink: #697d8e;
+  --color-clay: #3f8fcf;
+  --color-clay-dark: #2c74ad;
+  --color-sage: #7fb7a4;
+  --color-sage-dark: #4b8f78;
+  --color-honey: #f0b45c;
 }
 
 @theme inline {

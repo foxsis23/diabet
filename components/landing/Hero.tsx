@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { HeartPulse, Salad, Clock } from 'lucide-react'
+import { HeartPulse, Leaf, Clock } from 'lucide-react'
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-cream">
-      <div className="absolute -top-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-honey/20 blur-3xl" />
+      <div className="absolute -top-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-clay/15 blur-3xl" />
       <div className="absolute -bottom-40 -left-24 w-[26rem] h-[26rem] rounded-full bg-sage/20 blur-3xl" />
 
       <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
@@ -16,14 +16,13 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-extrabold text-ink mb-6 leading-tight">
-            Діабет — не вирок.{' '}
-            <span className="text-clay">Це режим, який можна опанувати</span>
+            Високий тиск — не вирок.{' '}
+            <span className="text-clay">Його можна тримати під контролем</span>
           </h1>
 
           <p className="text-lg md:text-xl text-ink-soft mb-10 leading-relaxed">
-            10 коротких відеоуроків простою мовою: що відбувається з цукром та інсуліном, чому
-            цифри лякають і як прийти до стабільності без крайнощів. Без страшилок і складних
-            термінів.
+            Відеоуроки простою мовою: що означають цифри на тонометрі, чому тиск стрибає, як
+            знижувати його без крайнощів і коли час до лікаря. Без страшилок і складних термінів.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -37,7 +36,7 @@ export default function Hero() {
               href="/test"
               className="text-center border-2 border-line hover:border-clay text-ink font-semibold px-6 py-3.5 rounded-full transition-colors"
             >
-              Перевірити ризик безкоштовно
+              Перевірити свій тиск безкоштовно
             </Link>
           </div>
 
@@ -47,7 +46,7 @@ export default function Hero() {
               <span>Доказова медицина</span>
             </div>
             <div className="flex items-center gap-2">
-              <Salad className="w-5 h-5 text-sage-dark" />
+              <Leaf className="w-5 h-5 text-sage-dark" />
               <span>Практичні поради</span>
             </div>
             <div className="flex items-center gap-2">
@@ -62,7 +61,7 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-xl shadow-ink/10 bg-sand">
             <Image
               src="/images/hero.webp"
-              alt="Усміхнена жінка з чашкою чаю біля сонячного вікна"
+              alt="Спокійна усміхнена жінка вдома в затишному світлі"
               fill
               priority
               sizes="(max-width: 768px) 90vw, 448px"

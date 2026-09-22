@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-// IDF Diabetes Atlas (2025) і дослідження Diabetes Prevention Program.
+// ВООЗ, Global report on hypertension (2023).
 const facts = [
-  { value: '1 з 9', label: 'дорослих у світі живе з діабетом' },
-  { value: '4 з 10', label: 'не знають про свій діагноз' },
-  { value: '−58%', label: 'ризику діабету 2 типу дає зміна харчування й руху' },
-  { value: '2 хв', label: 'займає тест ризику FINDRISC' },
+  { value: '1 з 3', label: 'дорослих у світі має підвищений тиск' },
+  { value: '~46%', label: 'не знають про свою гіпертонію' },
+  { value: '1 з 5', label: 'тримає тиск під контролем' },
+  { value: '2 хв', label: 'займає перевірка на сайті' },
 ]
 
 export default function TrustBlock() {
@@ -23,17 +23,17 @@ export default function TrustBlock() {
 
         <div className="rounded-[2rem] bg-sage/15 border border-sage/30 p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-extrabold text-ink mb-2">Не знаєте свій ризик?</h2>
+            <h2 className="text-2xl font-extrabold text-ink mb-2">Що означають ваші цифри?</h2>
             <p className="text-ink-soft">
-              8 запитань фінської шкали FINDRISC — і ви дізнаєтесь імовірність діабету 2 типу на 10
-              років уперед.
+              Вкажіть останні показники тонометра — і дізнаєтесь категорію тиску за європейськими
+              рекомендаціями та свої фактори ризику.
             </p>
           </div>
           <Link
             href="/test"
             className="shrink-0 bg-sage-dark hover:bg-sage-dark/90 text-white font-bold px-7 py-3.5 rounded-full transition-colors"
           >
-            Пройти тест →
+            Перевірити тиск →
           </Link>
         </div>
       </div>

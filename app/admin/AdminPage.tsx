@@ -81,7 +81,7 @@ function LoginScreen({ onLogin }: { onLogin: (key: string) => void }) {
           <p className="text-clay-dark text-sm font-semibold uppercase tracking-widest mb-2">
             Admin
           </p>
-          <h1 className="text-2xl font-black text-ink">діабет.net</h1>
+          <h1 className="text-2xl font-black text-ink">тиск.net</h1>
         </div>
         <form
           onSubmit={handleSubmit}
@@ -614,7 +614,7 @@ export default function AdminPage() {
       <div className="border-b border-line bg-white sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-clay-dark font-black text-lg">діабет.net</span>
+            <span className="text-clay-dark font-black text-lg">тиск.net</span>
             <span className="text-muted-ink text-sm">/ адмін</span>
           </div>
           <div className="flex items-center gap-4">

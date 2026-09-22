@@ -5,10 +5,10 @@ export default function Header() {
     <header className="w-full border-b border-line bg-cream/85 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link href="/" className="font-extrabold text-ink text-lg tracking-tight">
-          діабет<span className="text-clay">.net</span>
+          тиск<span className="text-clay">.net</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm text-ink-soft">
-          <Link href="/test" className="hover:text-clay transition-colors">Тест ризику</Link>
+          <Link href="/test" className="hover:text-clay transition-colors">Перевірка тиску</Link>
           <Link href="/course" className="hover:text-clay transition-colors">Відеокурс</Link>
           <Link href="/my" className="hover:text-clay transition-colors">Мої матеріали</Link>
           <Link href="/contacts" className="hover:text-clay transition-colors">Контакти</Link>

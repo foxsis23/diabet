@@ -4,7 +4,7 @@ import LegalDocument from '@/components/shared/LegalDocument'
 import { TERMS_BLOCKS } from '@/data/legal/terms'
 
 export const metadata: Metadata = {
-  title: 'Публічна оферта — діабет.net',
+  title: 'Публічна оферта — тиск.net',
   description: 'Публічна оферта (договір приєднання) про надання інформаційно-освітніх послуг.',
 }
 

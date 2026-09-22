@@ -10,13 +10,18 @@ export interface Question {
   answers: Answer[]
 }
 
-export type RiskLevel = 'low' | 'slight' | 'moderate' | 'high' | 'very_high'
+export type BpLevel =
+  | 'unknown'
+  | 'optimal'
+  | 'normal'
+  | 'high_normal'
+  | 'grade1'
+  | 'grade2'
+  | 'grade3'
 
-export interface RiskResult {
-  level: RiskLevel
+export interface BpResult {
+  level: BpLevel
   title: string
-  /** Імовірність діабету 2 типу за 10 років за шкалою FINDRISC. */
-  odds: string
   text: string
   steps: string[]
 }

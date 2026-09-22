@@ -3,23 +3,23 @@ import { Stethoscope, Users, ShieldCheck, Activity, type LucideIcon } from 'luci
 const cards: { Icon: LucideIcon; title: string; description: string }[] = [
   {
     Icon: Stethoscope,
-    title: 'Щойно поставили діагноз',
-    description: 'Розберетесь, що відбувається в організмі, і перестанете боятися — крок за кроком.',
+    title: 'Щойно сказали «гіпертонія»',
+    description: 'Розберетесь, що відбувається із судинами і серцем, і перестанете боятися — крок за кроком.',
   },
   {
     Icon: Activity,
-    title: 'Цукор «скаче»',
-    description: 'Зрозумієте, чому глюкоза коливається і чому це не привід для паніки.',
+    title: 'Тиск «стрибає»',
+    description: 'Зрозумієте, чому цифри змінюються протягом дня і коли це справді привід для тривоги.',
   },
   {
     Icon: ShieldCheck,
-    title: 'Переддіабет або ризик',
-    description: 'Дізнаєтесь, що зробити зараз, щоб діабет так і не розвинувся.',
+    title: 'Тиск на межі норми',
+    description: 'Дізнаєтесь, що змінити зараз, щоб не дійти до таблеток на все життя.',
   },
   {
     Icon: Users,
-    title: 'Турбуєтесь про близьку людину',
-    description: 'Знатимете, як підтримати маму, тата чи дитину — і не помилитися з їжею й ліками.',
+    title: 'Турбуєтесь про батьків',
+    description: 'Знатимете, як правильно міряти тиск рідним і коли не можна чекати.',
   },
 ]
 
@@ -30,7 +30,7 @@ export default function WhoItHelps() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-ink mb-4">Кому допоможе курс</h2>
           <p className="text-muted-ink text-lg max-w-2xl mx-auto">
-            Для тих, хто живе з діабетом 2 типу, має переддіабет або доглядає за рідними
+            Для тих, хто живе з підвищеним тиском, має його на межі норми або доглядає за рідними
           </p>
         </div>
 

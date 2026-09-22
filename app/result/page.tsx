@@ -1,35 +1,40 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, AlertCircle } from 'lucide-react'
 import Header from '@/components/shared/Header'
 import Footer from '@/components/landing/Footer'
 import MedicalDisclaimer from '@/components/shared/MedicalDisclaimer'
-import { MAX_SCORE, riskFor } from '@/lib/scoring'
-import { RiskLevel } from '@/types'
+import { bpLevel, bpResult, parseAnswers, riskFactors } from '@/lib/scoring'
+import { FACTOR_TIPS } from '@/data/questions'
+import { BpLevel } from '@/types'
 
 export const metadata: Metadata = {
-  title: 'Ваш ризик діабету — діабет.net',
+  title: 'Ваш тиск — тиск.net',
   robots: { index: false },
 }
 
-const LEVEL_COLOR: Record<RiskLevel, string> = {
-  low: 'bg-sage',
-  slight: 'bg-honey',
-  moderate: 'bg-honey',
-  high: 'bg-clay',
-  very_high: 'bg-clay-dark',
-}
+// Шкала від оптимального до 3 ступеня: колір і позиція маркера.
+const SCALE: { level: BpLevel; label: string; color: string }[] = [
+  { level: 'optimal', label: '<120/80', color: 'bg-sage' },
+  { level: 'normal', label: '120–129', color: 'bg-sage' },
+  { level: 'high_normal', label: '130–139', color: 'bg-honey' },
+  { level: 'grade1', label: '140–159', color: 'bg-honey' },
+  { level: 'grade2', label: '160–179', color: 'bg-clay' },
+  { level: 'grade3', label: '180+', color: 'bg-red-500' },
+]
 
 interface PageProps {
-  searchParams: Promise<{ score?: string }>
+  searchParams: Promise<{ a?: string }>
 }
 
 export default async function ResultPage({ searchParams }: PageProps) {
-  const score = Number((await searchParams).score)
-  if (!Number.isInteger(score) || score < 0 || score > MAX_SCORE) redirect('/test')
+  const answers = parseAnswers((await searchParams).a)
+  if (!answers) redirect('/test')
 
-  const risk = riskFor(score)
+  const level = bpLevel(answers)
+  const result = bpResult(level)
+  const factors = riskFactors(answers)
 
   return (
     <>
@@ -37,28 +42,35 @@ export default async function ResultPage({ searchParams }: PageProps) {
       <main className="flex-1 bg-cream min-h-screen">
         <div className="max-w-2xl mx-auto px-4 py-12 space-y-6">
           <div className="bg-white rounded-3xl border border-line p-8 text-center">
-            <p className="text-muted-ink text-sm mb-2">Ваш результат</p>
-            <div className="text-6xl font-extrabold text-ink mb-1">{score}</div>
-            <p className="text-muted-ink text-sm mb-6">балів із {MAX_SCORE}</p>
+            <p className="text-muted-ink text-sm mb-4">Ваш результат</p>
 
-            <div className="w-full bg-line rounded-full h-3 mb-6 overflow-hidden">
-              <div
-                className={`h-3 rounded-full ${LEVEL_COLOR[risk.level]}`}
-                style={{ width: `${Math.max(4, (score / MAX_SCORE) * 100)}%` }}
-              />
-            </div>
+            {level !== 'unknown' && (
+              <div className="grid grid-cols-6 gap-1 mb-6">
+                {SCALE.map((s) => (
+                  <div key={s.level}>
+                    <div
+                      className={`h-3 rounded-full ${s.color} ${s.level === level ? '' : 'opacity-25'}`}
+                    />
+                    <div
+                      className={`text-[10px] sm:text-xs mt-1 ${
+                        s.level === level ? 'text-ink font-bold' : 'text-muted-ink'
+                      }`}
+                    >
+                      {s.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
 
-            <h1 className="text-2xl font-extrabold text-ink mb-2">{risk.title}</h1>
-            <p className="text-ink-soft mb-1">
-              Імовірність діабету 2 типу протягом 10 років — <b>{risk.odds}</b>.
-            </p>
-            <p className="text-ink-soft leading-relaxed mt-4">{risk.text}</p>
+            <h1 className="text-2xl font-extrabold text-ink mb-3">{result.title}</h1>
+            <p className="text-ink-soft leading-relaxed">{result.text}</p>
           </div>
 
           <div className="bg-white rounded-3xl border border-line p-8">
             <h2 className="font-bold text-ink text-lg mb-4">Що зробити зараз</h2>
             <ul className="space-y-3">
-              {risk.steps.map((step) => (
+              {result.steps.map((step) => (
                 <li key={step} className="flex gap-3 text-ink-soft">
                   <CheckCircle2 className="w-5 h-5 text-sage-dark shrink-0 mt-0.5" />
                   {step}
@@ -67,10 +79,31 @@ export default async function ResultPage({ searchParams }: PageProps) {
             </ul>
           </div>
 
+          <div className="bg-white rounded-3xl border border-line p-8">
+            <h2 className="font-bold text-ink text-lg mb-1">Ваші фактори ризику</h2>
+            {factors.length ? (
+              <>
+                <p className="text-muted-ink text-sm mb-4">
+                  Знайдено {factors.length} — і більшість із них можна змінити.
+                </p>
+                <ul className="space-y-3">
+                  {factors.map((id) => (
+                    <li key={id} className="flex gap-3 text-ink-soft">
+                      <AlertCircle className="w-5 h-5 text-honey shrink-0 mt-0.5" />
+                      {FACTOR_TIPS[id]}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <p className="text-ink-soft">Суттєвих факторів ризику не знайдено — так тримати.</p>
+            )}
+          </div>
+
           <div className="rounded-3xl bg-clay/10 border border-clay/20 p-8 text-center">
-            <h2 className="text-xl font-extrabold text-ink mb-2">Розберіться в діабеті спокійно</h2>
+            <h2 className="text-xl font-extrabold text-ink mb-2">Розберіться в тиску спокійно</h2>
             <p className="text-ink-soft mb-6">
-              Відеокурс простою мовою: як працюють цукор та інсулін і як жити з діабетом спокійно.
+              Відеокурс простою мовою: що означають цифри, чому тиск стрибає і як тримати його в нормі.
             </p>
             <Link
               href="/course"
@@ -84,7 +117,7 @@ export default async function ResultPage({ searchParams }: PageProps) {
 
           <p className="text-center">
             <Link href="/test" className="text-muted-ink hover:text-ink text-sm underline">
-              Пройти тест ще раз
+              Пройти перевірку ще раз
             </Link>
           </p>
         </div>

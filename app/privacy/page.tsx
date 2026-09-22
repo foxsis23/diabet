@@ -4,7 +4,7 @@ import LegalDocument from '@/components/shared/LegalDocument'
 import { PRIVACY_BLOCKS } from '@/data/legal/privacy'
 
 export const metadata: Metadata = {
-  title: 'Політика конфіденційності — діабет.net',
+  title: 'Політика конфіденційності — тиск.net',
   description: 'Порядок збору, обробки, зберігання та захисту персональних даних користувачів сайту.',
 }
 
