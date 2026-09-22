@@ -12,7 +12,7 @@ import Footer from '@/components/landing/Footer'
 export const metadata: Metadata = {
   title: 'тиск.net — Перевірка тиску та відеокурс',
   description:
-    'Дізнайтесь, що означають ваші цифри тиску, і як тримати його в нормі — з відеокурсу Єлизавети Скидиненко.',
+    'Дізнайтесь, що означають ваші цифри тиску, і як тримати його в нормі — з відеокурсу Єлизавети Скиданенко.',
 }
 
 export default function HomePage() {
