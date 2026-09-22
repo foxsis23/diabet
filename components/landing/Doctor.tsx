@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Check } from 'lucide-react'
+import { Check, Stethoscope } from 'lucide-react'
 import { DOCTOR } from '@/data/doctor'
 
 export default function Doctor() {
@@ -7,7 +7,13 @@ export default function Doctor() {
     <section className="py-20 px-4 bg-sand/60">
       <div className="max-w-4xl mx-auto grid md:grid-cols-[18rem_1fr] gap-10 items-center">
         <div className="relative aspect-square w-64 md:w-72 mx-auto rounded-full overflow-hidden border-8 border-white shadow-lg shadow-ink/10 bg-sand">
-          <Image src={DOCTOR.photo} alt={DOCTOR.name} fill sizes="288px" className="object-cover" />
+          {DOCTOR.photo ? (
+            <Image src={DOCTOR.photo} alt={DOCTOR.name} fill sizes="288px" className="object-cover" />
+          ) : (
+            <span className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-honey/40 to-sage/40">
+              <Stethoscope className="w-20 h-20 text-clay" strokeWidth={1.25} />
+            </span>
+          )}
         </div>
         <div>
           <p className="text-sage-dark font-semibold mb-2">Автор курсу</p>
