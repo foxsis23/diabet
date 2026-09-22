@@ -12,7 +12,7 @@ import Footer from '@/components/landing/Footer'
 export const metadata: Metadata = {
   title: 'біль.net — Перевірка болю та відеокурс',
   description:
-    'Дізнайтесь, що підсилює ваш біль і як його полегшити, — з відеокурсу Єлизавети Скидиненко.',
+    'Дізнайтесь, що підсилює ваш біль і як його полегшити, — з відеокурсу Єлизавети Скиданенко.',
 }
 
 export default function HomePage() {
